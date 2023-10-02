@@ -5,7 +5,7 @@ import { fetchLoremIpsum } from "../redux/action/fetchAction";
 const DisplayLorem = () => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.loremipsum.content); 
-  
+
   useEffect(() => {
     dispatch(fetchLoremIpsum());
   }, [dispatch]);
@@ -14,8 +14,11 @@ const DisplayLorem = () => {
     <div>
       {data && (
         <div>
-          <h1>Api Data</h1>
-          <p>{data.text}</p> 
+          <h4>A short Naration of Lorem Ipsum</h4>
+          <ul>
+          <li>{data.text}</li> 
+          </ul>
+          
           
         </div>
       )}
