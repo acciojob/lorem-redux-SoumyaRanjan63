@@ -14,12 +14,12 @@ const DisplayLorem = () => {
     <div>
       {data && (
         <div>
-          <h4>A short Naration of Lorem Ipsum</h4>
+          <h1>A short Naration of Lorem Ipsum</h1>
+          <h4>Below Contains A title and Body gotten froma random API, Please take your time to Review</h4>
           <ul>
           <li>{data.text}</li> 
           </ul>
-          
-          
+                   
         </div>
       )}
     </div>
