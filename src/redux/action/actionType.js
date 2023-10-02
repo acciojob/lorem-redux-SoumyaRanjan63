@@ -1,0 +1,3 @@
+export const FETCHLOREM='FETCHLOREM';
+export const RECEIVELOREM='RECEIVELOREM';
+
